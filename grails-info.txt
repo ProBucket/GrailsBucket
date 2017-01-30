@@ -1,0 +1,9 @@
+grails run-app -port=8090
+
+grails war
+
+grails help
+
+WAR - Web Application Archive
+
+POJO - Plain Old Java Object is a Java object not bound by any restriction other
