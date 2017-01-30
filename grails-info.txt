@@ -7,3 +7,25 @@ grails help
 WAR - Web Application Archive
 
 POJO - Plain Old Java Object is a Java object not bound by any restriction other
+
+HTML:
+http://www.w3schools.com/html/default.asp
+
+Java:
+https://docs.oracle.com/javase/tutorial/
+
+Groovy:
+http://www.groovy-lang.org/
+
+JS:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+
+Grails:
+http://it-ebooks.info/book/1616/
+https://grails.org/documentation.html
+
+
+http://www.tutorialspoint.com/developers_best_practices/index.htm
+
+http://docs.grails.org/2.5.5/
+grails er doc er 7,8 chapter gula onek important
