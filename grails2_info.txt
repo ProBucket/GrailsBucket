@@ -6,3 +6,38 @@
   # Need To Learn
   
    1. JavaScript prototype.
+   
+   
+   (function() {
+    var _s = app.tabs.setting.prototype;
+    var initProductSettings =  _s.initProductSettings;
+    _s.initProductSettings = function(data) {
+        if(initProductSettings) {
+            initProductSettings.call(this, arguments)
+        }
+    };
+})();
+
+ PLUGIN
+-----------------------
+1. plugins are in -> ref/plugins
+2. Create new plugin by grails command "create-commander-plugin plugin_name"
+3. plugin all information should be in -> [plugin_name]GrailsPlugin.groovy
+ - hooks need to be added here -
+  hooks = [
+   hook_name: [taglib: "taglib_namespace", callable: "hook_name/variable"]
+        ]
+4. plugin structure
+ - views should be in (respective plugin) -> grails-app/views/plugins/{plugin_name} directory
+ - hook data should be in (respective plugin) -> grails-app/taglib/com.bitmascot.plugin.{plugin_name}/{plugin_name}TagLib file
+ - controller data should be in (respective plugin) -> grails-app/controllers/com.bitmascot.plugin.{plugin_name} directory
+5. in hook function example -
+
+ def productPageSettings = {Map attrs, body -> // function name to be called from hook tag, pass attribute as Map
+        out << body()        // content between hool tag 
+        out << g.include(view: "/plugins/product_custom_information/productPageSettings.gsp") // view for plugin
+    }
+ 
+6. add plugin in -> target/plugins.list
+
+
