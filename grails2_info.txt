@@ -40,4 +40,11 @@
  
 6. add plugin in -> target/plugins.list
 
+Map, List, Closure
+JS prototype
+@Transectional
+@Autobill
+@Qualifier
+
+
 
